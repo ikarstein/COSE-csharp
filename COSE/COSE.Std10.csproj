@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netstandard2.0;net462;netcoreapp2.0</TargetFrameworks>
+    <TargetFrameworks>net462</TargetFrameworks>
     <PackageId>Com.AugustCellars.COSE</PackageId>
     <Id>Com.AugustCellars.COSE</Id>
     <PackageVersion>1.6.0</PackageVersion>
@@ -77,8 +77,9 @@
   
 
   <ItemGroup>
-    <PackageReference Include="PeterO.Cbor" Version="4.0.0" />
-    <PackageReference Include="Portable.BouncyCastle" Version="1.8.5" />
+    <PackageReference Include="Microsoft.Bcl.Async" Version="1.0.168" />
+    <PackageReference Include="PeterO.Cbor" Version="4.5.2" />
+    <PackageReference Include="Portable.BouncyCastle" Version="1.9.0" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Attributes.cs" />
